@@ -277,10 +277,6 @@ docker run -p 3000:3000 \
 - **Backup**: Filecoin provides redundancy, but consider backup policies
 - **Compliance**: Audit logs are immutable and cryptographically verified
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
 ### Development Workflow
 
 1. Fork the repository
@@ -322,13 +318,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-- **Documentation**: [docs.webhook-vault.io](https://docs.webhook-vault.io)
-- **Issues**: [GitHub Issues](https://github.com/your-org/webhook-dead-letter-vault/issues)
-- **Discord**: [Join our community](https://discord.gg/webhook-vault)
-- **Email**: support@webhook-vault.io
-
 ## 🏆 Built for WaveHack
 
 This project was created for [Filecoin WaveHack](https://wavehack.filecoin.io/), showcasing the power of Filecoin Onchain Cloud for building reliable, decentralized infrastructure.
@@ -344,4 +333,4 @@ This project was created for [Filecoin WaveHack](https://wavehack.filecoin.io/),
 
 **Never lose another webhook. Ever.** 🛡️
 
-Made with ❤️ by the Webhook Vault team
+
