@@ -316,11 +316,11 @@ docker run -p 3000:3000 \
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🏆 Built for WaveHack
 
-This project was created for [Filecoin WaveHack](https://wavehack.filecoin.io/), showcasing the power of Filecoin Onchain Cloud for building reliable, decentralized infrastructure.
+This project was created for [Filecoin WaveHack](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl), showcasing the power of Filecoin Onchain Cloud for building reliable, decentralized infrastructure.
 
 **Why Filecoin?**
 - **Immutable Storage**: Webhook payloads are cryptographically guaranteed
