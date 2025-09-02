@@ -8,7 +8,7 @@
 
 Webhook Dead-Letter Vault is a bulletproof webhook relay service built on Filecoin Onchain Cloud that automatically captures, stores, and replays failed webhook events with cryptographic integrity guarantees.
 
-## 🚨 The Problem
+##  The Problem
 
 Webhooks fail. When they do, it's silent, costly, and often undetected until customers complain:
 
@@ -19,34 +19,34 @@ Webhooks fail. When they do, it's silent, costly, and often undetected until cus
 
 **Real impact:** Stripe, Shopify, and AWS all invest heavily in retry infrastructure because webhook failures are *expected*, not exceptional.
 
-## ✨ The Solution
+##  The Solution
 
 WDLV transforms fragile webhooks into **immortal event streams** with one line of code:
 
 ```javascript
-// Before: Hope and pray 🙏
+// Before: Hope and pray 
 webhook.send(payload)
 
-// After: Bulletproof reliability 🛡️
+// After: Bulletproof reliability 
 webhook.via('wdlv://your-vault-id').send(payload)
 ```
 
 ### Key Features
 
-- **🛡️ Automatic Vaulting** - Failed webhooks instantly stored in Filecoin
-- **🔄 Smart Retries** - Exponential backoff with configurable policies
-- **📋 Audit Trail** - Immutable history with cryptographic proofs
-- **⚡ Fast Replay** - On-demand event replay via FilCDN
-- **💰 Usage-Based Pricing** - Pay only for failed events via Filecoin Pay
-- **🔍 Real-Time Monitoring** - Live dashboard showing vault activity
+- ** Automatic Vaulting** - Failed webhooks instantly stored in Filecoin
+- ** Smart Retries** - Exponential backoff with configurable policies
+- ** Audit Trail** - Immutable history with cryptographic proofs
+- ** Fast Replay** - On-demand event replay via FilCDN
+- ** Usage-Based Pricing** - Pay only for failed events via Filecoin Pay
+- ** Real-Time Monitoring** - Live dashboard showing vault activity
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
     A[Your App] --> B[WDLV Relay]
     B --> C{Webhook Delivery}
-    C -->|Success| D[✅ Complete]
+    C -->|Success| D[Complete]
     C -->|Failure| E[Filecoin Warm Storage]
     E --> F[PDP Verification]
     F --> G[Retry Queue]
@@ -62,7 +62,7 @@ graph TB
 - **Filecoin Pay** - Streaming micropayments for usage
 - **Synapse SDK** - Unified developer experience
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -108,20 +108,20 @@ const vault = new WebhookVault({
 })
 ```
 
-## 📊 Dashboard
+##  Dashboard
 
 Monitor your webhook reliability in real-time:
 
 ```
-🟢 HEALTHY WEBHOOKS: 1,247 delivered (98.2%)
-🔴 VAULTED EVENTS: 23 failed, auto-retrying
-🔄 ACTIVE RETRIES: 3 in progress
-📈 SUCCESS RATE: 99.8% after retries
+ HEALTHY WEBHOOKS: 1,247 delivered (98.2%)
+ VAULTED EVENTS: 23 failed, auto-retrying
+ ACTIVE RETRIES: 3 in progress
+ SUCCESS RATE: 99.8% after retries
 
 Recent Activity:
-✅ stripe.payment_intent.succeeded - Delivered in 145ms
-🔴 shopify.order.created - Failed, vaulted, retry in 30s
-✅ twilio.sms.delivered - Delivered in 89ms
+ stripe.payment_intent.succeeded - Delivered in 145ms
+ shopify.order.created - Failed, vaulted, retry in 30s
+ twilio.sms.delivered - Delivered in 89ms
 ```
 
 ## 🛠️ Development
@@ -187,7 +187,7 @@ npm run lint
 npm run format
 ```
 
-## 📦 API Reference
+##  API Reference
 
 ### WebhookVault Class
 
@@ -233,7 +233,7 @@ const stats = await vault.getVaultStats()
 // { totalEvents, successRate, vaultedEvents, activeRetries }
 ```
 
-## 🧪 Testing
+##  Testing
 
 The project includes comprehensive tests covering:
 
@@ -254,7 +254,7 @@ npm test -- --grep "vault storage"
 npm run test:coverage
 ```
 
-## 🚢 Deployment
+##  Deployment
 
 ### Docker
 
@@ -288,37 +288,37 @@ docker run -p 3000:3000 \
 7. Push to the branch (`git push origin feature/amazing-feature`)
 8. Open a Pull Request
 
-## 📋 Roadmap
+##  Roadmap
 
 ### Wave 1: Foundation (Current)
-- ✅ Core vault service with Filecoin integration
-- ✅ Stripe webhook support
-- ✅ Basic retry logic and dashboard
-- 🔄 SDK and documentation
+-  Core vault service with Filecoin integration
+-  Stripe webhook support
+-  Basic retry logic and dashboard
+-  SDK and documentation
 
 ### Wave 2: Expansion
-- 🔲 Support for Shopify, Twilio, and other major providers  
-- 🔲 Advanced retry policies and custom rules
-- 🔲 Webhook signature validation
-- 🔲 Rate limiting and DDoS protection
+-  Support for Shopify, Twilio, and other major providers  
+-  Advanced retry policies and custom rules
+-  Webhook signature validation
+-  Rate limiting and DDoS protection
 
 ### Wave 3: Enterprise
-- 🔲 White-label solutions
-- 🔲 Multi-tenant architecture
-- 🔲 Advanced analytics and reporting
-- 🔲 SLA guarantees and enterprise support
+-  White-label solutions
+-  Multi-tenant architecture
+-  Advanced analytics and reporting
+-  SLA guarantees and enterprise support
 
 ### Wave 4: Ecosystem
-- 🔲 Plugin architecture for custom integrations
-- 🔲 GraphQL API and real-time subscriptions
-- 🔲 Mobile SDKs (iOS, Android)
-- 🔲 Terraform provider for infrastructure-as-code
+-  Plugin architecture for custom integrations
+-  GraphQL API and real-time subscriptions
+-  Mobile SDKs (iOS, Android)
+-  Terraform provider for infrastructure-as-code
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
-## 🏆 Built for WaveHack
+##  Built for WaveHack
 
 This project was created for [Filecoin WaveHack](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl), showcasing the power of Filecoin Onchain Cloud for building reliable, decentralized infrastructure.
 
@@ -331,6 +331,6 @@ This project was created for [Filecoin WaveHack](https://app.akindo.io/wave-hack
 
 ---
 
-**Never lose another webhook. Ever.** 🛡️
+**Never lose another webhook. Ever.** 
 
 
